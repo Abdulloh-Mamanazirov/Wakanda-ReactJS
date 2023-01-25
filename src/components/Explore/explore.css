@@ -1,0 +1,25 @@
+/* section#explore */
+
+section#explore {
+  background-color: var(--secondary-color);
+  padding-top: 3rem;
+}
+
+section#explore .flex {
+  align-items: center;
+  gap: 10rem;
+}
+
+section#explore h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+section#explore p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 1rem 0;
+  line-height: 1.6;
+}
+
+/* section#explore end */

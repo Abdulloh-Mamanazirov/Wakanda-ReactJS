@@ -1,0 +1,543 @@
+/* Variables */
+*{
+  outline: 1px solid red;
+}
+:root {
+  --primary-color: #0077c0;
+  --secondary-color: #c7eeff;
+  --grey-color: #d9dbe1;
+  --dark-color: #1d242b;
+}
+
+/* Variables end */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* Reset end */
+
+/* Utils */
+
+.container {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.portion {
+  flex: 1;
+}
+
+.half {
+  width: 50%;
+}
+
+.athird {
+  width: 33%;
+}
+
+.twoofthird {
+  width: 66%;
+}
+
+.aquater {
+  width: 25%;
+}
+
+.main-btn {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.6em 1.2em;
+  border-radius: 5px;
+  text-transform: capitalize;
+  font-size: 18px;
+  border:none;
+}
+
+.main-btn:hover {
+  opacity: 0.9;
+}
+
+.main-btn:active {
+  opacity: 0.8;
+}
+
+/* Utils end */
+
+
+@media (max-width: 1410px) {
+  .container {
+    width: 1000px;
+  }
+}
+
+@media (max-width: 1010px) {
+  .container {
+    width: 770px;
+  }
+  .main-btn {
+    padding: 7px 12px;
+    font-size: 15px;
+  }
+  .flex {
+    flex-wrap: wrap;
+  }
+
+  header#main-header {
+    width: 100vw;
+  }
+
+  /* Showcase */
+  section#showcase h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  section#showcase p {
+    width: 400px;
+    line-height: 1.6;
+    margin: 2rem 0;
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+  /* Showcase End */
+
+  /* Partners */
+  section#partners .flex {
+    gap: 30px;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+  #partners .partners {
+    width: 31%;
+  }
+  /* Partners End */
+
+  /* Feature */
+  section#feature h5 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+  }
+  section#feature h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding-top: 10px;
+  }
+  section#feature .flex {
+    gap: 30px;
+    justify-content: center;
+  }
+  section#feature article {
+    text-align: center;
+    width: 350px;
+  }
+  /* Feature End */
+
+  /* Steps */
+  section#steps .flex {
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+  }
+  section#steps h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  section#steps ol {
+    margin-top: 1.5rem;
+    list-style: none;
+  }
+  section#steps li {
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin: 1rem 0;
+  }
+  section#steps .counter {
+    font-size: 12px;
+    width: 25px;
+    height: 25px;
+    justify-content: center;
+    margin-right: 1rem;
+    font-weight: 600;
+  }
+  /* Steps End */
+
+  /* Explore */
+  section#explore .flex {
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+  }
+
+  section#explore h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  section#explore p {
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin: 1rem 0;
+    line-height: 1.6;
+  }
+  /* Explore end */
+
+  /* Testimonials */
+  section#testimonials h5 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+  }
+
+  section#testimonials h2 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin: 1rem auto 3rem;
+  }
+
+  section#testimonials > .flex {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  section#testimonials article p {
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  /*Testimonials End  */
+
+  /* Find */
+
+  section#find h3 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+
+  section#find h2 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 1rem 0;
+  }
+  /* Find End */
+
+  /* footer */
+
+  footer#the-end .logo {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+
+  footer#the-end .socials {
+    margin: 3rem 0 5rem;
+  }
+
+  footer#the-end .socials li {
+    margin-right: 0.3em;
+  }
+
+  footer#the-end form input {
+    padding: 0.5em 1em;
+  }
+  footer h2 {
+    font-size: 18px;
+  }
+  footer li {
+    font-size: 14px;
+  }
+  footer p {
+    font-size: 13px;
+  }
+
+  /* Footer end */
+}
+
+@media (max-width: 780px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .main-btn {
+    padding: 8px 14px;
+    font-size: 15px;
+  }
+  .flex {
+    flex-wrap: wrap;
+  }
+
+  nav {
+    display: none;
+  }
+  .dropdown i {
+    color: #0077c0;
+    font-size: 25px;
+  }
+  .dropdown {
+    position: absolute;
+    right: 40px;
+    display: initial;
+  }
+  .dropdown-menu {
+    text-align: center;
+    background-color: rgb(247, 245, 245);
+    border-radius: 10px;
+    position: absolute;
+    right: 0px;
+    width: 250px;
+    margin: 5px 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+  }
+  .dropdown-menu li {
+    font-size: 17px;
+    font-weight: 500;
+    padding: 13px 0;
+  }
+  .dropdown-menu li:hover {
+    background-color: #eee;
+  }
+
+  #drop1 {
+    display: none;
+  }
+
+  #drop1:checked + .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+  }
+  header#main-header .logo {
+    padding-left: 20px;
+  }
+  header#main-header {
+    width: 100vw;
+  }
+
+  /* Showcase */
+  section#showcase .portion {
+    all: unset;
+  }
+
+  .showcase-text {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  section#showcase h1 {
+    font-size: 2rem;
+  }
+  section#showcase p {
+    width: unset;
+    line-height: 1.4;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  /* Showcase End */
+
+  /* Partners */
+  section#partners .flex {
+    display: none;
+  }
+  /* Partners End */
+
+  /* Feature */
+  section#feature h5 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+  }
+  section#feature h2 {
+    width: unset !important;
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding-top: 10px;
+  }
+  section#feature .flex {
+    gap: 30px;
+    justify-content: center;
+  }
+  section#feature article {
+    text-align: center;
+    width: 350px;
+  }
+  /* Feature End */
+
+  /* Steps */
+  section#steps .flex {
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+  }
+  section#steps .portion {
+    all: unset;
+  }
+  section#steps h2 {
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+  section#steps ol {
+    margin-top: 1.5rem;
+    list-style: none;
+  }
+  section#steps li {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 1rem 0;
+  }
+  section#steps .counter {
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    margin-right: 1rem;
+    font-weight: 600;
+  }
+  /* Steps End */
+
+  /* Explore */
+  section#explore .flex {
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+  }
+  section#explore .portion {
+    all: unset;
+  }
+  section#explore h2 {
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+
+  section#explore p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 1rem 0;
+    line-height: 1.6;
+  }
+  /* Explore end */
+
+  /* Testimonials */
+  section#testimonials h5 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+  }
+  section#testimonials .portion {
+    all: unset;
+  }
+  section#testimonials h2 {
+    width: unset !important;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 1rem auto 3rem;
+  }
+
+  section#testimonials > .flex {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  section#testimonials article p {
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  /*Testimonials End  */
+
+  /* Find */
+  section#find .portion {
+    all: unset;
+    padding-left: 20px;
+  }
+  section#find h3 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+
+  section#find h2 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 1rem 0;
+  }
+  /* Find End */
+
+  /* footer */
+  footer#the-end {
+    flex-wrap: wrap;
+  }
+  footer#the-end .athird {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  footer#the-end .portion,
+  .aquater {
+    all: unset;
+    width: 100%;
+  }
+  footer#the-end ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  footer#the-end .logo {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+
+  footer#the-end .socials {
+    margin: 3rem 0 5rem;
+  }
+
+  footer#the-end .socials li {
+    margin-right: 0.3em;
+  }
+
+  footer#the-end form input {
+    padding: 0.5em 1em;
+  }
+  footer h2 {
+    font-size: 18px;
+  }
+  footer li {
+    font-size: 14px;
+  }
+  footer p {
+    font-size: 13px;
+  }
+
+  /* Footer end */
+}

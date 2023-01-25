@@ -1,0 +1,12 @@
+/* section#partners */
+
+section#partners {
+  background-color: #fff;
+  padding: 5rem 0;
+}
+
+section#partners .flex {
+  justify-content: space-between;
+}
+
+/* section#partners end */

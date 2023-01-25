@@ -1,0 +1,32 @@
+/* section#find */
+
+section#find {
+  background-color: #fff;
+  padding: 3rem 0;
+}
+
+section#find .flex {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 3rem 0;
+}
+
+section#find h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+section#find h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 1rem 0;
+}
+
+section#find .main-btn {
+  background-color: #fff;
+  color: var(--primary-color);
+}
+
+/* section#find end */
