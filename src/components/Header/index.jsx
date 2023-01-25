@@ -6,7 +6,7 @@ function Nav() {
   return <header id="main-header">
       <div className="container flex">
         <div className="logo">
-          <img src={logo} alt="LOGO" />
+          <img src={logo} width={200} alt="LOGO" />
         </div>
         <nav className="main-nav">
           <ul className="flex">
