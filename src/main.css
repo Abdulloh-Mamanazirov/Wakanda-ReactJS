@@ -1,7 +1,4 @@
 /* Variables */
-*{
-  outline: 1px solid red;
-}
 :root {
   --primary-color: #0077c0;
   --secondary-color: #c7eeff;
